@@ -6,8 +6,7 @@
 			"observer": "J'entends du bruit dans la pièce d'à coté. ",
 			"possibleActions": [
 				{"name": "écouter à la porte", "targetEvent": 2},
-				{"name": "dormir", "targetEvent": 1},
-				{"name": "entrée dans la pièce voisine", "targetEvent": 11}
+				{"name": "dormir", "targetEvent": 1}
 			]
 		},
 		{
@@ -15,7 +14,8 @@
 			"description" : "Tu entends un homme parler, il semble bouger des charges importantes",
 			"observer": "La porte possède une grosse serrure où l'on pourrait regarder au travers",
 			"possibleActions": [
-				{"name": "regader par la serrure", "targetEvent": 3}
+				{"name": "regader par la serrure", "targetEvent": 3},
+				{"name": "entrée dans la pièce voisine", "targetEvent": 11}
 			]
 		},
 		{
