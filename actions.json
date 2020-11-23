@@ -1,139 +1,229 @@
 {
-	"choices": [
+    "choices": [
+        {
+            "id": 0,
+            "description": "Je viens de me réveiller, j'ai dormi dans une auberge",
+            "observer": "J'entends du bruit dans la pièce d'à coté. ",
+            "possibleActions": [
+                {
+                    "name": "écouter à la porte",
+                    "targetEvent": 1
+                },
+                {
+                    "name": "dormir",
+                    "targetEvent": 0
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "description": "J'entends un homme parler, il semble qu'il traîne quelquechose",
+            "observer": "La porte possède une grosse serrure où l'on pourrait regarder au travers",
+            "possibleActions": [
+                {
+                    "name": "regarder par la serrure",
+                    "targetEvent": 2
+                },
+                {
+                    "name": "entrer dans la pièce",
+                    "targetEvent": 3
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "description": "On peut y voir un sac et un homme avec une épée dans la main",
+            "observer": "Le sac bouge ! Quelqu'un est en train de se faire enlever!",
+            "possibleActions": [
+                {
+                    "name": "entrer dans la pièce",
+                    "targetEvent": 3
+                },
+                {
+                    "name": "descendre alerter l'aubergiste",
+                    "targetEvent": 4
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "description": "J'ouvre la porte",
+            "observer": "L'homme armé se retourne et cours vers moi",
+            "possibleActions": [
+                {
+                    "name": "attaquer",
+                    "targetEvent": 14
+                },
+                {
+                    "name": "s'enfuir",
+                    "targetEvent": 5
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "description": "Je descents doucement sans faire de bruit.",
+            "observer": "L'aubergiste, ainsi que 2 gardes du seigneur Sardoche, roi du royaumme du Sel se trouvent à une table",
+            "possibleActions": [
+                {
+                    "name": "avertir l'aubergiste",
+                    "targetEvent": 6
+                },
+                {
+                    "name": "avertir les gardes",
+                    "targetEvent": 7
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "description": "Je cours vers la sortie de l'auberge",
+            "observer": "2 gardes me font signe de m'arrêter",
+            "possibleActions": [
+                {
+                    "name": "je continue de courir",
+                    "targetEvent": 8
+                },
+                {
+                    "name": "je m'arrête et explique la situation",
+                    "targetEvent": 8
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "description": "J'explique la situation à l'aubergiste",
+            "observer": "Il ne me croît pas",
+            "possibleActions": [
+                {
+                    "name": "convaincre",
+                    "targetEvent": 6
+                },
+                {
+                    "name": "partir",
+                    "targetEvent": 8
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "description": "J'explique la situation aux gardes",
+            "observer": "Les gardes ont l'air de me croire et me suivent devant la pièce",
+            "possibleActions": [
+                {
+                    "name": "entrer en premier",
+                    "targetEvent": 8
+                },
+                {
+                    "name": "entrer en dernier",
+                    "targetEvent": 9
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "description": "L'homme armé m'attaque",
+            "observer": "Son épée me transperce, ma vision se trouble",
+            "possibleActions": [
+                {
+                    "name": "...",
+                    "targetEvent": 14
+                },
+                {
+                    "name": "... ... ...",
+                    "targetEvent": 14
+                }
+            ]
+        },
 		{
-			"id": 0,
-			"description": "Je viens de me réveiller, j'ai dormi dans une auberge",
-			"observer": "J'entends du bruit dans la pièce d'à coté. ",
-			"possibleActions": [
-				{
-					"name": "écouter à la porte",
-					"targetEvent": 1
-				},
-				{
-					"name": "dormir",
-					"targetEvent": 0
-				}
-			]
-		},
+            "id": 9,
+            "description": "L'homme armé attaque les gardes",
+            "observer": "Le premier est mort sur le coup, son épée glisse à mes pieds",
+            "possibleActions": [
+                {
+                    "name": "s'enfuir",
+                    "targetEvent": 8
+                },
+                {
+                    "name": "lancer l'épée",
+                    "targetEvent": 10
+                }
+            ]
+        },
 		{
-			"id": 1,
-			"description": "Tu entends un homme parler, il semble bouger des charges importantes",
-			"observer": "La porte possède une grosse serrure où l'on pourrait regarder au travers",
-			"possibleActions": [
-				{
-					"name": "regader par la serrure",
-					"targetEvent": 2
-				},
-				{
-					"name": "entrée dans la pièce voisine",
-					"targetEvent": 6
-				}
-			]
-		},
+            "id": 10,
+            "description": "Je lance l'épée en direction de l'homme armé",
+            "observer": "L'épée lui transperce la gorge, le sac se remets à bouger",
+            "possibleActions": [
+                {
+                    "name": "ouvrir le sac",
+                    "targetEvent": 12
+                },
+                {
+                    "name": "partir",
+                    "targetEvent": 11
+                }
+            ]
+        },
 		{
-			"id": 2,
-			"description": "On peut y voir un corps couvert sur le sol est un homme avec une épée dans la main",
-			"observer": "La personnes semble avoir besoin d'aide ! que faire ?",
-			"possibleActions": [
-				{
-					"name": "entrée dans la pièce",
-					"targetEvent": 6
-				},
-				{
-					"name": "aller au salon",
-					"targetEvent": 4
-				}
-			]
-		},
+            "id": 11,
+            "description": "Je quitte l'auberge et continue mon aventure",
+            "observer": "Je me demande ce que contenait dans le sac",
+            "possibleActions": [
+                {
+                    "name": "recommencer",
+                    "targetEvent": 0
+                },
+                {
+                    "name": "quitter",
+                    "targetEvent": 0
+                }
+            ]
+        },
 		{
-			"id": 3,
-			"description": "Je descents doucement vers le salon sans faire de bruit.",
-			"observer": "L'aubergiste, ainsi que 2 gardes du seigneur Sardoche, roi du royaumme du Sel se trouve à une table",
-			"possibleActions": [
-				{
-					"name": "raconter l'histoire à l'aubergiste",
-					"targetEvent": 5
-				},
-				{
-					"name": "raconter l'histoire aux gardes du seigneur",
-					"targetEvent": 7
-				}
-			]
-		},
+            "id": 12,
+            "description": "J'ouvre le sac et découvre quelqu'un attaché dedans",
+            "observer": "C'est le prince du royaume du sel! Je me dépêche de le libérer",
+            "possibleActions": [
+                {
+                    "name": "...",
+                    "targetEvent": 13
+                },
+                {
+                    "name": "... ... ...",
+                    "targetEvent": 13
+                }
+            ]
+        },
 		{
-			"id": 4,
-			"description": "Je descents doucement vers le salon sans faire de bruit.",
-			"observer": "L'aubergiste, ainsi que 2 gardes du seigneur Sardoche, roi du royaumme du Sel se trouve à une table",
-			"possibleActions": [
-				{
-					"name": "entrée dans la pièce",
-					"targetEvent": 6
-				},
-				{
-					"name": "aller au salon",
-					"targetEvent": 4
-				}
-			]
-		},
+            "id": 13,
+            "description": "Le prince est libéré, il me remercie et m'invite au chateau royal",
+            "observer": "Bravo vous avez trouvé la vraie fin",
+            "possibleActions": [
+                {
+                    "name": "recommencer",
+                    "targetEvent": 0
+                },
+                {
+                    "name": "quitter",
+                    "targetEvent": 0
+                }
+            ]
+        },
 		{
-			"id": 5,
-			"description": "Tu racontes l'histoire au garde de Sardoche. Intrigué et a moitié bourré, il décide de vous suivre.",
-			"observer": "Une fois arrivé devant l'escalier, les gardes sortent leur épée.",
-			"possibleActions": [
-				{
-					"name": "passer en premier pour indiquer la pièce",
-					"targetEvent": 7
-				},
-				{
-					"name": "passer en dernier pour indiquer la pièce",
-					"targetEvent": 7
-				}
-			]
-		},
-		{
-			"id": 6,
-			"description": "La porte s'ouvre, on peut observer un homme avec une épée dans la main. Un corps couvert est sur le sol",
-			"observer": "l'homme se retourne et commence à venir vers toi.",
-			"possibleActions": [
-				{
-					"name": "partir en courant",
-					"targetEvent": 6
-				},
-				{
-					"name": "Crier",
-					"targetEvent": 5
-				}
-			]
-		},
-		{
-			"id": 7,
-			"description": "Le garde derière vous tombe entrainnant de sa chute le second garde. Le bruit fit venir l'aubergiste",
-			"observer": "Les gardes ont l'air mort et l'aubergiste arrive.",
-			"possibleActions": [
-				{
-					"name": "fuire",
-					"targetEvent": 12
-				},
-				{
-					"name": "rester",
-					"targetEvent": 10
-				}
-			]
-		},
-		{
-			"id": 8,
-			"description": "Perdu, tu es mort",
-			"observer": "recommence si tu veux retenter de sauver le prince",
-			"possibleActions": [
-				{
-					"name": "Recommencer",
-					"targetEvent": 0
-				},
-				{
-					"name": "quitter",
-					"targetEvent": 8
-				}
-			]
-		}
-	]
+            "id": 14,
+            "description": "Vous êtes mort",
+            "observer": " ",
+            "possibleActions": [
+                {
+                    "name": "recommencer",
+                    "targetEvent": 0
+                },
+                {
+                    "name": "quitter",
+                    "targetEvent": 0
+                }
+            ]
+        }
+    ]
 }
