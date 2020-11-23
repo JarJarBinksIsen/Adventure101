@@ -2,85 +2,138 @@
 	"choices": [
 		{
 			"id": 0,
-			"description" : "Je viens de me réveiller, j'ai dormi dans une auberge",
+			"description": "Je viens de me réveiller, j'ai dormi dans une auberge",
 			"observer": "J'entends du bruit dans la pièce d'à coté. ",
 			"possibleActions": [
-				{"name": "écouter à la porte", "targetEvent": 1},
-				{"name": "dormir", "targetEvent": 0}
+				{
+					"name": "écouter à la porte",
+					"targetEvent": 1
+				},
+				{
+					"name": "dormir",
+					"targetEvent": 0
+				}
 			]
 		},
 		{
 			"id": 1,
-			"description" : "Tu entends un homme parler, il semble bouger des charges importantes",
+			"description": "Tu entends un homme parler, il semble bouger des charges importantes",
 			"observer": "La porte possède une grosse serrure où l'on pourrait regarder au travers",
 			"possibleActions": [
-				{"name": "regader par la serrure", "targetEvent": 2},
-				{"name": "entrée dans la pièce voisine", "targetEvent": 6}
+				{
+					"name": "regader par la serrure",
+					"targetEvent": 2
+				},
+				{
+					"name": "entrée dans la pièce voisine",
+					"targetEvent": 6
+				}
 			]
 		},
 		{
 			"id": 2,
-			"description" : "On peut y voir un corps couvert sur le sol est un homme avec une épée dans la main",
+			"description": "On peut y voir un corps couvert sur le sol est un homme avec une épée dans la main",
 			"observer": "La personnes semble avoir besoin d'aide ! que faire ?",
 			"possibleActions": [
-				{"name": "entrée dans la pièce", "targetEvent": 6},
-				{"name": "aller au salon", "targetEvent": 4}
+				{
+					"name": "entrée dans la pièce",
+					"targetEvent": 6
+				},
+				{
+					"name": "aller au salon",
+					"targetEvent": 4
+				}
 			]
 		},
 		{
 			"id": 3,
-		  "description" : "Je descents doucement vers le salon sans faire de bruit.",
+			"description": "Je descents doucement vers le salon sans faire de bruit.",
 			"observer": "L'aubergiste, ainsi que 2 gardes du seigneur Sardoche, roi du royaumme du Sel se trouve à une table",
 			"possibleActions": [
-				{"name": "raconter l'histoire à l'aubergiste", "targetEvent": 5},
-				{"name": "raconter l'histoire aux gardes du seigneur", "targetEvent": 7}
+				{
+					"name": "raconter l'histoire à l'aubergiste",
+					"targetEvent": 5
+				},
+				{
+					"name": "raconter l'histoire aux gardes du seigneur",
+					"targetEvent": 7
+				}
 			]
 		},
 		{
 			"id": 4,
-			"description" : "Je descents doucement vers le salon sans faire de bruit.",
+			"description": "Je descents doucement vers le salon sans faire de bruit.",
 			"observer": "L'aubergiste, ainsi que 2 gardes du seigneur Sardoche, roi du royaumme du Sel se trouve à une table",
 			"possibleActions": [
-				{"name": "entrée dans la pièce", "targetEvent": 6},
-				{"name": "aller au salon", "targetEvent": 4}
+				{
+					"name": "entrée dans la pièce",
+					"targetEvent": 6
+				},
+				{
+					"name": "aller au salon",
+					"targetEvent": 4
+				}
 			]
 		},
 		{
 			"id": 5,
-			"description" : "Tu racontes l'histoire au garde de Sardoche. Intrigué et a moitié bourré, il décide de vous suivre.",
+			"description": "Tu racontes l'histoire au garde de Sardoche. Intrigué et a moitié bourré, il décide de vous suivre.",
 			"observer": "Une fois arrivé devant l'escalier, les gardes sortent leur épée.",
 			"possibleActions": [
-				{"name": "passer en premier pour indiquer la pièce", "targetEvent": 7},
-				{"name": "passer en dernier pour indiquer la pièce", "targetEvent": 7}
+				{
+					"name": "passer en premier pour indiquer la pièce",
+					"targetEvent": 7
+				},
+				{
+					"name": "passer en dernier pour indiquer la pièce",
+					"targetEvent": 7
+				}
 			]
 		},
 		{
 			"id": 6,
-			"description" : "La porte s'ouvre, on peut observer un homme avec une épée dans la main. Un corps couvert est sur le sol",
+			"description": "La porte s'ouvre, on peut observer un homme avec une épée dans la main. Un corps couvert est sur le sol",
 			"observer": "l'homme se retourne et commence à venir vers toi.",
 			"possibleActions": [
-				{"name": "partir en courant", "targetEvent": 6},
-				{"name": "Crier", "targetEvent": 5}
+				{
+					"name": "partir en courant",
+					"targetEvent": 6
+				},
+				{
+					"name": "Crier",
+					"targetEvent": 5
+				}
 			]
 		},
 		{
 			"id": 7,
-			"description" : "Le garde derière vous tombe entrainnant de sa chute le second garde. Le bruit fit venir l'aubergiste",
+			"description": "Le garde derière vous tombe entrainnant de sa chute le second garde. Le bruit fit venir l'aubergiste",
 			"observer": "Les gardes ont l'air mort et l'aubergiste arrive.",
 			"possibleActions": [
-				{"name": "fuire", "targetEvent": 12},
-				{"name": "rester", "targetEvent": 10}
+				{
+					"name": "fuire",
+					"targetEvent": 12
+				},
+				{
+					"name": "rester",
+					"targetEvent": 10
+				}
 			]
 		},
 		{
 			"id": 8,
-			"description" : "Perdu, tu es mort",
+			"description": "Perdu, tu es mort",
 			"observer": "recommence si tu veux retenter de sauver le prince",
 			"possibleActions": [
-				{"name": "Recommencer", "targetEvent": 0},
-				{"name": "quitter", "targetEvent": 8}
+				{
+					"name": "Recommencer",
+					"targetEvent": 0
+				},
+				{
+					"name": "quitter",
+					"targetEvent": 8
+				}
 			]
 		}
 	]
-
 }
